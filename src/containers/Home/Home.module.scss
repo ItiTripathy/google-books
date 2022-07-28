@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background-color: antiquewhite;
+    margin-bottom: 5%;
+    color: purple;
+    font-family: "Times New Roman", Times, serif;
+
+    > h1 {
+        font-size: 65px;
+        margin-bottom: 2%;
+
+        font-weight: 7rem;
+    }
+
+    > p {
+        font-size: 21px;
+        margin-bottom: 5%;
+        font-family: "Times New Roman", Times, serif;
+    }
+}
+
+.SearchBar {
+    position: relative;
+    top: 12vh;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+
+    &__Input {
+        height: 30px;
+        width: 700px;
+        margin-right: 5px;
+        border: 1px solid purple;
+    }
+
+    &__Btn {
+        height: 32px;
+        width: 100px;
+        outline: none;
+        border: none;
+        border: 1px solid purple;
+        color: purple;
+        font-weight: bolder;
+        font-family: "Times New Roman", Times, serif;
+    }
+}
