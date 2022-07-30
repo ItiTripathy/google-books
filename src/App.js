@@ -9,6 +9,7 @@ const App = () => {
     return (
         <div className={styles.App}>
             <Home />
+            <BookList />
         </div>
     );
 };
