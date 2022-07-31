@@ -2,7 +2,19 @@ import React from "react";
 import styles from "./Home.module.scss";
 import { useState } from "react";
 
-const Home = () => {
+const Home = ({ onSubmit, setSearch }) => {
+    const [inputValue, setInputValue] = useState("");
+
+    const handleChange = (event) => {
+        event.preventDefault();
+        setSearch(event.target.value);
+        setInputValue(event.target.value);
+    };
+
+    const handleClick = () => {
+        onSubmit(inputValue);
+    };
+
     return (
         <>
             <header className={styles.Header}>
@@ -11,11 +23,18 @@ const Home = () => {
                 <div className={styles.SearchBar}>
                     <label htmlFor="searchInput"></label>
                     <input
+                        type="text"
                         className={styles.SearchBar__Input}
                         id="searchInput"
-                        type="text"
+                        onChange={handleChange}
+                        value={inputValue}
                     ></input>
-                    <button className={styles.SearchBar__Btn}>Search</button>
+                    <button
+                        className={styles.SearchBar__Btn}
+                        onClick={handleClick}
+                    >
+                        Search
+                    </button>
                 </div>
             </header>
         </>
