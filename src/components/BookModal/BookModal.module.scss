@@ -1,0 +1,54 @@
+.Overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &__Inner {
+        background-color: white;
+        top: 5%;
+        max-width: 90vw;
+        max-height: 70vh;
+        padding: 2%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+        text-align: center;
+
+        &__Info {
+            margin-top: 5%;
+            padding-bottom: 2%;
+            font-weight: bold;
+        }
+
+        &__Img {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+        }
+
+        &__Btn {
+            border: none;
+            outline: none;
+            width: 120px;
+            background-color: black;
+            color: white;
+            margin: 20px 0;
+            padding: 10px;
+        }
+    }
+}
+.Close {
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 35px;
+    margin-left: auto;
+}

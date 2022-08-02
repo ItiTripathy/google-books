@@ -8,13 +8,16 @@ const App = () => {
     const [search, setSearch] = useState("");
 
     const fetchBooks = async (query) => {
+        if (query === "") {
+            return;
+        }
         const response = await fetch(
             `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=12`
         );
 
         const data = await response.json();
         console.log(data);
-       
+        setBooks(data.items);
     };
 
     useEffect(() => {

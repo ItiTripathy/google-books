@@ -1,0 +1,29 @@
+.BookCard {
+    box-shadow: 0 2px 5px 0 #00000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+    > img {
+        margin: 3px;
+        width: 150px;
+        height: auto;
+    }
+
+    > h4 {
+        padding: 15px 0;
+        color: dimgrey;
+    }
+
+    > p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    &:hover {
+        transform: scale(0.95);
+    }
+}
