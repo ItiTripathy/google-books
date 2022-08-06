@@ -23,3 +23,9 @@ Create a page that allows users to search for books Page should include the foll
 -   The grid should be responsive on different screen sizes
 
 -   You should use async / await for your request code, NOT .then
+
+## Live Image
+
+![TargetImage](./src/live-image.png)
+
+
